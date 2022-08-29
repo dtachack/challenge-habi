@@ -1,0 +1,168 @@
+[
+  {
+    "number": 1,
+    "path": "/name-client",
+    "info": "CUSTOMER_INFORMATION",
+    "title": "NAME_AND_SURNAME",
+    "controls": [
+      {
+        "placeholder": "NAME_AND_SURNAME",
+        "nameProperty": "name",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "path": "/email-client",
+    "info": "CUSTOMER_INFORMATION",
+    "title": "EMAIL",
+    "controls": [
+      {
+        "placeholder": "EMAIL",
+        "nameProperty": "email",
+        "type": "email",
+        "required": true
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "path": "/address-client",
+    "info": "HOUSING_INFORMATION",
+    "title": "APARTMENT_ADDRESS",
+    "controls": [
+      {
+        "placeholder": "APARTMENT_ADDRESS",
+        "nameProperty": "address",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "path": "/floor-number",
+    "info": "HOUSING_INFORMATION",
+    "title": "FLOOR_NUMBER",
+    "controls": [
+      {
+        "placeholder": "FLOOR_NUMBER",
+        "nameProperty": "floorNumber",
+        "type": "number",
+        "required": true,
+        "max": 50,
+        "min": 1
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "path": "/common-zones",
+    "info": "HOUSING_INFORMATION",
+    "title": "COMMON_ZONES",
+    "controls": [
+      {
+        "placeholder": "COMMON_ZONES",
+        "nameProperty": "commonZones",
+        "type": "checkboxgroup",
+        "list": [
+          {
+            "nameProperty": "bbq",
+            "text": "BBQ_AREA"
+          },
+          {
+            "nameProperty": "communal_living",
+            "text": "COMMUNAL_LIVING"
+          },
+          {
+            "nameProperty": "playground",
+            "text": "PLAYGROUND"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "path": "/has-parking",
+    "info": "HOUSING_INFORMATION",
+    "title": "QUESTION_APARTMENT_HAS_PARKING",
+    "controls": [
+      {
+        "placeholder": "QUESTION_APARTMENT_HAS_PARKING",
+        "nameProperty": "hasParking",
+        "type": "radioGroup",
+        "required": true,
+        "list": [
+          {
+            "nameProperty": "1",
+            "text": "YES"
+          },
+          {
+            "nameProperty": "0",
+            "text": "NO"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "path": "/sale-amount",
+    "info": "HOUSING_INFORMATION",
+    "title": "SALE_AMOUNT",
+    "controls": [
+      {
+        "placeholder": "SALE_AMOUNT",
+        "nameProperty": "saleAmount",
+        "type": "money",
+        "required": true,
+        "currency": "COP"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "path": "/photo-file",
+    "info": "HOUSING_INFORMATION",
+    "title": "PHOTO_OF_THE_PROPERTY",
+    "controls": [
+      {
+        "placeholder": "PHOTO_OF_THE_PROPERTY",
+        "nameProperty": "file",
+        "type": "file",
+        "required": true,
+        "formats": [
+          "image/png"
+        ],
+        "maxSizeBytes": 5000000
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "path": "/apartment-elevator",
+    "info": "HOUSING_INFORMATION",
+    "title": "QUESTION_APARTMENT_WITH_ELEVATOR",
+    "controls": [
+      {
+        "placeholder": "QUESTION_APARTMENT_WITH_ELEVATOR",
+        "nameProperty": "apartmentElevator",
+        "type": "radioGroup",
+        "required": true,
+        "list": [
+          {
+            "nameProperty": "1",
+            "text": "YES"
+          },
+          {
+            "nameProperty": "0",
+            "text": "NO"
+          }
+        ]
+      }
+    ]
+  }
+]
