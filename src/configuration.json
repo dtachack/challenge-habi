@@ -133,7 +133,7 @@
         "placeholder": "PHOTO_OF_THE_PROPERTY",
         "nameProperty": "file",
         "type": "file",
-        "required": true,
+        "required": false,
         "formats": [
           "image/png"
         ],
