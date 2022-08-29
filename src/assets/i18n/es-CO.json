@@ -29,5 +29,6 @@
   "PHOTO_OF_THE_PROPERTY": "Foto del Inmueble",
   "FILE_EXCEEDS_SIZE": "El archivo excede el tamaño permitido",
   "THE_FILE_HAS_AN_INVALID_FORMAT": "El archivo tiene un formato no válido",
-  "FULL_RECORD_TITLE": "Registro completado correctamente"
+  "FULL_RECORD_TITLE": "Registro completado correctamente",
+  "SELECT_FILE": "Seleccionar imagen"
 }

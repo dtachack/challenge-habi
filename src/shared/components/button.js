@@ -74,6 +74,7 @@ const Button = ({
   icon,
   onClick,
   disabled,
+  width,
   heigth,
   small,
   ...props
@@ -86,6 +87,7 @@ const Button = ({
       }
       style={{
         height: heigth,
+        width: width,
       }}
       onClick={onClick}
       {...props}

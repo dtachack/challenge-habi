@@ -9,6 +9,13 @@ const Text = styled.span`
   display: block;
 `;
 
+const FilePreview = styled.img`
+  width: 200px;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+`;
+
 const ViewInformation = ({ control, information }) => {
   const { t } = useTranslation();
   const listData =
@@ -16,7 +23,13 @@ const ViewInformation = ({ control, information }) => {
     control?.type === ControlType.RadioGroup
       ? control?.list
       : [];
-  return control?.type === ControlType.Money ? (
+  return control?.type === ControlType.File ? (
+    <>
+      {!!information[control?.nameProperty] ? (
+        <FilePreview src={information[control?.nameProperty]}></FilePreview>
+      ) : null}
+    </>
+  ) : control?.type === ControlType.Money ? (
     <>
       <Text>
         {!!information[control?.nameProperty]
